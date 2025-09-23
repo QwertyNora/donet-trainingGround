@@ -1,15 +1,23 @@
 
 public class Person
 {
+    // Name property, private set
     public string? Name { get; private set; }
 
-    //Person name constructor
+    //Person Name constructor
     public Person(string name)
     {
         this.Name = name;
     }
 
-    public int BirthYear;
+    // BirthYear property, private set
+    public int BirthYear { get; private set; }
+
+    // Person BithYear constructor
+    public Person(int birthYear)
+    {
+        this.BirthYear = birthYear;
+    }
     public double LengthInMeters;
 
     //Constructor that makes Null possible
