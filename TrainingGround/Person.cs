@@ -1,6 +1,6 @@
 public class Person
 {
-    private string? Name;
+    public string? Name { get; private set; }
 
     //Person name constructor
     public Person(string name)
@@ -8,18 +8,6 @@ public class Person
         this.Name = name;
     }
 
-    public string GetName()
-    {
-        return this.Name;
-    }
-
-    public string SetName(string nameToSet)
-    {
-        if (nameToSet > 5)
-        {
-            this.Name = nameToSet;
-        }
-    }
     public int BirthYear;
     public double LengthInMeters;
 
