@@ -12,6 +12,7 @@ public class PersonTests
     [Theory]
     [InlineData(1982, 2025, 43)]
     [InlineData(1992, 2025, 33)]
+    [InlineData(2022, 2025, 3)]
     public void GetAgeTheory(int birthYear, int currentYear, int expectedAge)
     {
         var p = CreatePersonWithBirthYear(birthYear);
