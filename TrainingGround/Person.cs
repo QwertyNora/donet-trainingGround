@@ -15,8 +15,9 @@ public class Person
     //Constructor that makes Null possible
     public Person() { }
 
-    public IAsyncEnumerable<object> GetAge(int v)
+    // Get Persons age method
+    public int GetAge(int currentYear)
     {
-        throw new NotImplementedException();
+        return currentYear - this.BirthYear;
     }
 }
