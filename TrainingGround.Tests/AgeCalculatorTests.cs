@@ -12,8 +12,6 @@ public class AgeCalculatorTests
     [Fact]
     public void SomeoneBornIn1972_Is50_In2022()
     {
-        // arrange 
-        // var calculator = new AgeCalculator();
 
         // act 
         var age = _calculator.GetAge(1972, 2022);
@@ -25,8 +23,6 @@ public class AgeCalculatorTests
     [Fact]
     public void SomeoneBornIn2022_Is0_In2022()
     {
-        // arrange
-        // var calculator = new AgeCalculator();
 
         // act
         var age = _calculator.GetAge(2022, 2022);
