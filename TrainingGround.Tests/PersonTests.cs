@@ -9,6 +9,17 @@ public class PersonTests
         return new Person(birthYear);
     }
 
+    [Theory]
+    [InlineData(1982, 2025, 43)]
+    public void GetAgeTheory(int birthYear, int currentYear, int expectedAge)
+    {
+        var p = CreatePersonWithBirthYear(birthYear);
+
+        var age = p.GetAge(currentYear);
+
+        Assert.Equal(expectedAge, age);
+    }
+
     [Fact]
     public void ParameterlessConstructor_CreatesPerson()
     {
