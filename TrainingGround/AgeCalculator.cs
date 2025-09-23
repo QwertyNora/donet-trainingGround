@@ -1,6 +1,6 @@
 ﻿namespace TrainingGround;
 
-public class Class1
+public class AgeCalculator
 {
 
 }
