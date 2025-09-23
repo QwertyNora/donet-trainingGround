@@ -20,6 +20,14 @@ public class Person
     }
     public double LengthInMeters;
 
+    // Constructor to initialize both name, birth year and length
+    public Person(string name, int birthYear, double lengthInMeters)
+    {
+        this.Name = name;
+        this.BirthYear = birthYear;
+        this.LengthInMeters = lengthInMeters;
+    }
+
     //Constructor that makes Null possible
     public Person() { }
 
