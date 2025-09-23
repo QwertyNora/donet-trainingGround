@@ -14,7 +14,7 @@ public class AgeCalculatorTests
     {
 
         // act 
-        var age = _calculator.GetAge(1972, 2022);
+        var age = AgeCalculator.GetAge(1972, 2022);
 
         // assert
         Assert.Equal(50, age);
@@ -25,7 +25,7 @@ public class AgeCalculatorTests
     {
 
         // act
-        var age = _calculator.GetAge(2022, 2022);
+        var age = AgeCalculator.GetAge(2022, 2022);
 
         // assert
         Assert.Equal(0, age);
