@@ -3,7 +3,7 @@
 public class AgeCalculatorTests
 {
     [Fact]
-    public void Test1()
+    public void SomeoneBornIn1972_Is50_In2022()
     {
 
     }
