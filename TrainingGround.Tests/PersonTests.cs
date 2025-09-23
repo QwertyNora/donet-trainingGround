@@ -27,8 +27,7 @@ public class PersonTests
     public void APersonBornIn1972_Is50_In2022()
     {
         // arrange
-        var p = new Person();
-        p.BirthYear = 1972;
+        var p = new Person(1972);
 
         // act
         var age = p.GetAge(2022);
