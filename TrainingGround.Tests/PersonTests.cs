@@ -34,7 +34,7 @@ public class PersonTests
     public void APersonBornIn1972_Is53_In2025()
     {
         // arrange
-        var p = new Person(1972);
+        var p = CreatePersonWithBirthYear(1972);
 
         // act
         var age = p.GetAge(2025);
@@ -46,7 +46,7 @@ public class PersonTests
     [Fact]
     public void APersonBornIn1982_Is43_In2025()
     {
-        var p = new Person(1982);
+        var p = CreatePersonWithBirthYear(1982);
 
         var age = p.GetAge(2025);
 
@@ -56,7 +56,7 @@ public class PersonTests
     [Fact]
     public void APersonBornIn1992_Is33_In2025()
     {
-        var p = new Person(1992);
+        var p = CreatePersonWithBirthYear(1992);
 
         var age = p.GetAge(2025);
 
@@ -66,7 +66,7 @@ public class PersonTests
     [Fact]
     public void APersonBornIn2022_Is3_In2025()
     {
-        var p = new Person(2022);
+        var p = CreatePersonWithBirthYear(2022);
 
         var age = p.GetAge(2025);
 
