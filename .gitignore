@@ -1,0 +1,52 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Test Results
+TestResults/
+*.trx
+
+# Packages
+packages/
+*.nupkg
+*.snupkg
+
+# Generated files
+*.generated.cs
+
+# Publish output
+wwwroot/
+
+# Resharper
+_ReSharper.Caches/
+
+# DotNet User Secrets
+**/secrets.json
+
+# Rider
+.idea/
+
+# Coverage Reports
+coverage/
+*.coverage
+*.coveragexml
+*.codecov
+
+# Temporary files
+~$*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
