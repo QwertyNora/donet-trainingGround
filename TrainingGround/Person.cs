@@ -1,3 +1,4 @@
+
 public class Person
 {
     public string? Name { get; private set; }
@@ -13,4 +14,9 @@ public class Person
 
     //Constructor that makes Null possible
     public Person() { }
+
+    public IAsyncEnumerable<object> GetAge(int v)
+    {
+        throw new NotImplementedException();
+    }
 }
