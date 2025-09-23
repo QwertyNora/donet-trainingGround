@@ -1,6 +1,6 @@
 ﻿namespace TrainingGround.Tests;
 
-public class UnitTest1
+public class AgeCalculatorTests
 {
     [Fact]
     public void Test1()
