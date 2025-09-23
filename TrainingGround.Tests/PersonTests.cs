@@ -1,7 +1,14 @@
+using System.Reflection.Metadata;
+
 namespace TrainingGround.Tests;
 
 public class PersonTests
 {
+    private Person CreatePersonWithBirthYear(int birthYear)
+    {
+        return new Person(birthYear);
+    }
+
     [Fact]
     public void ParameterlessConstructor_CreatesPerson()
     {
@@ -64,5 +71,11 @@ public class PersonTests
         var age = p.GetAge(2025);
 
         Assert.Equal(3, age);
+    }
+
+    [Fact]
+    public void PersonBornYearX_IsX_YearsOldCurrentYear()
+    {
+
     }
 }
