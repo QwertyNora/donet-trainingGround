@@ -86,9 +86,4 @@ public class PersonTests
         Assert.Equal(3, age);
     }
 
-    [Fact]
-    public void PersonBornYearX_IsX_YearsOldCurrentYear()
-    {
-
-    }
 }
