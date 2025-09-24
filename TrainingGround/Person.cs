@@ -1,7 +1,7 @@
 
 using TrainingGround;
 
-public class Person
+public class Person : IPrintable
 {
     public string? Name { get; private set; }
     public int BirthYear { get; private set; }
@@ -35,5 +35,11 @@ public class Person
     public int GetAge(int currentYear)
     {
         return currentYear - this.BirthYear;
+    }
+
+    public string GetPrintString()
+    {
+        return @$"{this.Name} lives at:
+        {this.Address.Street} {this.Address.StreetNo}, {this.Address.City}.";
     }
 }
