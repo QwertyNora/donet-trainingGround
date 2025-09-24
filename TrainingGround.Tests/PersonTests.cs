@@ -110,4 +110,10 @@ public class PersonTests
         Assert.Equal("234-BDAS", emp.EmployeeId);
     }
 
+    [Fact]
+    public void APersonHasAnAddress()
+    {
+
+    }
+
 }
