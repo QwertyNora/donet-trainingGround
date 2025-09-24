@@ -3,7 +3,7 @@ public class Person
 {
     public string? Name { get; private set; }
     public int BirthYear { get; private set; }
-    public double LengthInMeters { get; private set; }
+    public double LengthInMeters { get; set; }
 
     public Person(string name)
     {
@@ -22,6 +22,11 @@ public class Person
         this.Name = name;
         this.BirthYear = birthYear;
         this.LengthInMeters = lengthInMeters;
+    }
+
+    public void UpdateLength(double newLength)
+    {
+        this.LengthInMeters = newLength;
     }
 
     public int GetAge(int currentYear)
