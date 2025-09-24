@@ -86,4 +86,16 @@ public class PersonTests
         Assert.Equal(3, age);
     }
 
+    [Fact]
+    public void AnEmployeeIsAPerson()
+    {
+        // act
+        var emp = new Employee();
+        emp.LengthInMeters = 1.95;
+
+        // assert
+        Assert.IsType<Employee>(emp);
+        Assert.Equal(1.95, emp.LengthInMeters);
+    }
+
 }
