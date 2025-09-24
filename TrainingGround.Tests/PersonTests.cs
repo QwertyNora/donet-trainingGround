@@ -130,4 +130,14 @@ public class PersonTests
 
     }
 
+    [Fact]
+    public void AnEmployeeGetPrintString_GetsANicePrintedAddress()
+    {
+        // arrange
+
+        // act
+
+        // assert
+    }
+
 }
