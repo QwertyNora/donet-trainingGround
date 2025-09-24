@@ -10,6 +10,12 @@ public class PersonTests
         return new Person(birthYear);
     }
 
+    public void Print(IPrintable printable)
+    {
+        var printString = printable.GetPrintString();
+        Console.WriteLine(printString);
+    }
+
     [Theory]
     [InlineData(1982, 2025, 43)]
     [InlineData(1992, 2025, 33)]
@@ -148,6 +154,27 @@ public class PersonTests
         A Street 23
         Stockholm",
         printString);
+    }
+
+    [Fact]
+    public void CanPrintPrintables()
+    {
+        // arrange
+        var emp = new Employee("Ossian", "234-BDAS");
+        emp.Address = new Address();
+        emp.Address.Street = "B Street";
+        emp.Address.StreetNo = 22;
+        emp.Address.City = "Malmö";
+
+        var p = new Person("Marcus");
+        p.Address = new Address();
+        p.Address.Street = "A Street";
+        p.Address.StreetNo = 23;
+        p.Address.City = "Stockholm";
+
+        // act
+        this.Print(p);
+        this.Print(emp);
     }
 
 }
