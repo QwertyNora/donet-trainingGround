@@ -134,10 +134,20 @@ public class PersonTests
     public void AnEmployeeGetPrintString_GetsANicePrintedAddress()
     {
         // arrange
+        var emp = new Employee("Marcus", "234-BDAS");
+        emp.Address = new Address();
+        emp.Address.Street = "A Street";
+        emp.Address.StreetNo = 23;
+        emp.Address.City = "Stockholm";
 
         // act
+        var printString = emp.GetPrintString();
 
         // assert
+        Assert.Equal(@"Marcus (234-BDAS)
+        A Street 23
+        Stockholm",
+        printString);
     }
 
 }
