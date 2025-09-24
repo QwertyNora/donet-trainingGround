@@ -1,3 +1,4 @@
+using System.Net.Sockets;
 using System.Reflection.Metadata;
 
 namespace TrainingGround.Tests;
@@ -113,6 +114,19 @@ public class PersonTests
     [Fact]
     public void APersonHasAnAddress()
     {
+
+        // arrange
+        var p = new Person("Marcus");
+
+        // act
+        p.Address = new Address();
+        p.Address.Street = "A Street";
+        p.Address.StreetNo = 23;
+        p.Address.City = "Stockholm";
+
+        // assert
+        Assert.NotNull(p.Address);
+        Assert.IsType<Address>(p.Address);
 
     }
 
