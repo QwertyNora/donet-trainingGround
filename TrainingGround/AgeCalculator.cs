@@ -2,7 +2,8 @@
 
 public enum AgeCategory
 {
-    Kid
+    Kid,
+    Adult
 }
 
 public class AgeCalculator
