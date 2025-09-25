@@ -16,7 +16,9 @@ public class AgeCalculator
 
     public static AgeCategory GetAgeCategory(Person person, int currentYear)
     {
-        if (person.GetAge(currentYear) > 18)
+        var isOlderThan18 = person.GetAge(currentYear) > 18;
+
+        if (isOlderThan18)
         {
             return AgeCategory.Adult;
         }
