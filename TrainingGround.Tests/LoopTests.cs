@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices.Marshalling;
 
-namespace TrainingGround;
+namespace TrainingGround.Tests;
 
 public class LoopTests
 {
