@@ -15,6 +15,6 @@ public class AgeCalculator
 
     public static AgeCategory GetAgeCategory(Person person, int currentYear)
     {
-        return GetAgeCategory.Kid;
+        return AgeCategory.Kid;
     }
 }
