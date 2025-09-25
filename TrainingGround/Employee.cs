@@ -2,7 +2,7 @@ namespace TrainingGround;
 
 public class Employee : Person, IPrintable
 {
-    public string EmployeeId { get; set; }
+    public string EmployeeId { get; set; } = string.Empty;
 
     public Employee() { }
     public Employee(string name, string employeeID) : base(name)
