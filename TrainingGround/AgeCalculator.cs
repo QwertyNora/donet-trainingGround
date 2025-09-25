@@ -19,7 +19,7 @@ public class AgeCalculator
     {
         var age = person.GetAge(currentYear);
 
-        if (age > 49 && age > 51)
+        if (age > 49 && age < 51)
         {
             return AgeCategory.Prime;
         }
