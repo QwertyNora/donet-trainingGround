@@ -15,4 +15,12 @@ public class ConditionalTests
         // assert
         Assert.Equal(AgeCategory.Kid, category);
     }
+
+    [Fact]
+    public void ShouldBeAdult_WhenOlderThan18()
+    {
+
+    }
+
+
 }
