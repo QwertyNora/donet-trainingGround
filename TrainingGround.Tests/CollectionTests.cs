@@ -27,4 +27,26 @@ public class CollectionTests
         Assert.Equal("Name 2", arrString[1]);
     }
 
+    [Fact]
+    public void ObjectInitializerWorks()
+    {
+        // act
+        var a = new Address();
+        a.Street = "B Street";
+        a.StreetNo = 22;
+        a.City = "Malmö";
+
+        var b = new Address
+        {
+            Street = "B Street",
+            StreetNo = 22,
+            City = "Malmö"
+        };
+
+        // assert
+        Assert.Equal(a.Street, b.Street);
+        Assert.Equal(a.StreetNo, b.StreetNo);
+        Assert.Equal(a.City, b.City);
+    }
+
 }
