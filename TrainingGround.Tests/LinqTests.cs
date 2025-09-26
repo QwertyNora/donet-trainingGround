@@ -51,4 +51,51 @@ public class LinqTests
         // assert
         Assert.Equal(53, firstNumberLargerThan15);
     }
+
+    [Fact]
+    public void LinqToCheckIfAnyMatches()
+    {
+        // arrange
+        var numbers = new List<int> { 1, 53, 20, 62, 2, 12, 17, 15, 16 };
+
+        // act
+        var anyOver100 = numbers.Any(number => number > 100);
+
+        // assert
+        Assert.False(anyOver100);
+    }
+
+    [Fact]
+    public void LinqToCheckIfAllMatches()
+    {
+        // arrange
+        var numbers = new List<int> { 1, 53, 20, 62, 2, 12, 17, 15, 16 };
+
+        // act
+        var allUnder100 = numbers.All(numbers => numbers < 100);
+
+        // assert
+        Assert.True(allUnder100);
+    }
+
+    [Fact]
+    public void FilterPeopleByNameLength_ReturnsCorrectList()
+    {
+        // arrange 
+        var people = new List<Person>
+        {
+            new Person("Aaron"),
+            new Person("Bea"),
+            new Person("Ceasar"),
+            new Person("Dave")
+        };
+
+        // act
+        var allWithLongNames = people
+        .Where(p => p.Name.Length > 4).ToList();
+
+        // assert
+        Assert.Equal(2, allWithLongNames.Count);
+        Assert.Equal("Aaron", allWithLongNames[0].Name);
+    }
 }
